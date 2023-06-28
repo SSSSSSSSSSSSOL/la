@@ -1,4 +1,4 @@
-
+actualizarBalance()
 $(".btn").on("mouseenter", function(){
     $(".btn").addClass("btnDos");
 })
@@ -381,6 +381,7 @@ function actualizarBalance() {
     let sumaEg = parseFloat(localStorage.getItem("sumaEg"));
     let balance = sumaIn - sumaEg;
     $("#titulo_principal").text(balance);
+    console.log(balance)
 
     localStorage.setItem("Balance", balance);
 
